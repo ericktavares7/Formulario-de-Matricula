@@ -74,36 +74,36 @@
 
           <fieldset class="adress">
             <legend>Endereço residencial</legend>
-            <div >
-            <div class="input-wrapper">
-              <label for="cep">CEP</label>
-              <input type="text" id="cep" name="cep">
-            </div>
-
-            <div class="flex">
-              <div class="input-wrapper flex-2">
-                <label for="street">Rua</label>
-                <input type="text" id="street" name="street" value="Rua das Flores" disabled>
+            <div>
+              <div class="input-wrapper">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" name="cep">
               </div>
 
-              <div class="input-wrapper flex-1">
-                <label for="number">Número</label>
-                <input type="number" id="number" name="number">
+              <div class="flex">
+                <div class="input-wrapper flex-2">
+                  <label for="street">Rua</label>
+                  <input type="text" id="street" name="street" value="Rua das Flores" disabled>
+                </div>
+
+                <div class="input-wrapper flex-1">
+                  <label for="number">Número</label>
+                  <input type="number" id="number" name="number">
+                </div>
+
               </div>
 
-            </div>
+              <div class="flex">
+                <div class="input-wrapper flex-2">
+                  <label for="city">Cidade</label>
+                  <input type="text" id="city" name="city" value="São Paulo" disabled>
+                </div>
 
-            <div class="flex">
-              <div class="input-wrapper flex-2">
-                <label for="city">Cidade</label>
-                <input type="text" id="city" name="city" value="São Paulo" disabled>
+                <div class="input-wrapper flex-1">
+                  <label for="state">Estado</label>
+                  <input type="text" id="state" name="state" value="SP" disabled>
+                </div>
               </div>
-
-              <div class="input-wrapper flex-1">
-                <label for="state">Estado</label>
-                <input type="text" id="state" name="state" value="SP" disabled>
-              </div>
-            </div>
             </div>
           </fieldset>
 
@@ -112,7 +112,7 @@
             <legend>Informações do Responsável</legend>
             <div>
               <label for="gardian">Nome do Responsável</label>
-              <input type="text" id="gardian" name="gardian" >
+              <input type="text" id="gardian" name="gardian">
               <small>
                 Principal responsável legal e contato de emergência
               </small>
@@ -140,27 +140,28 @@
 
             <div class="input-wrapper">
               <label>Selecione o turno de estudo</label>
+
+              <div class="radio-wrapper">
+
+                <div class="radio-inner">
+                  <div class="radio-image"></div>
+                  <input type="radio" name="study-shift" id="morning" value="morning">
+                  <img src="assets/logo/sun-cloud-02.svg" alt="icone de sol com nuvem">
+                  <label for="morning">Manhã</label>
+                </div>
+
+                <div class="radio-inner">
+                  <div class="radio-image"></div>
+                  <input type="radio" name="study-shift" id="ivening" value="ivening">
+                  <img src="assets/logo/sun-02.svg" alt="icone de sol com nuvem">
+                  <label for="evening">Tarde</label>
+                </div>
+
+              </div>
             </div>
 
-            <div class="radio-wrapper">
-              
-              <div class="radio-inner">
-
-                <div class="radio-image"></div>
-                <input type="radio" name="study-shift" id="morning" value="morning">
-                <img src="assets/logo/sun-cloud-02.svg" alt="icone de sol com nuvem">
-                <label for="morning">Manhã</label>
-
-              </div>
-
-              <div class="radio-inner">
-
-                <div class="radio-image"></div>
-                <input type="radio" name="study-shift" id="ivening" value="ivening">
-                <img src="assets/logo/sun-02.svg" alt="icone de sol com nuvem">
-                <label for="morning">Tarde</label>
-                
-              </div>
+            <div class="input-wrapper">
+              <label>Em qual esporte você gostaria de inscrever seu filho?</label>
             </div>
           </fieldset>
         </form>
