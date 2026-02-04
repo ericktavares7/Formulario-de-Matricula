@@ -72,9 +72,9 @@
             </div>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="adress">
             <legend>Endereço residencial</legend>
-            <div class="adress">
+            <div >
             <div class="input-wrapper">
               <label for="cep">CEP</label>
               <input type="text" id="cep" name="cep">
@@ -107,10 +107,10 @@
             </div>
           </fieldset>
 
-          <fieldset>
-            <legend>Informações do Responsável</legend>
+          <fieldset class="input-wrapper">
 
-            <div class="input-wrapper">
+            <legend>Informações do Responsável</legend>
+            <div>
               <label for="gardian">Nome do Responsável</label>
               <input type="text" id="gardian" name="gardian" >
               <small>
@@ -135,6 +135,34 @@
             </div>
           </fieldset>
 
+          <fieldset class="enroll-options">
+            <legend>Opções de Matrícula</legend>
+
+            <div class="input-wrapper">
+              <label>Selecione o turno de estudo</label>
+            </div>
+
+            <div class="radio-wrapper">
+              
+              <div class="radio-inner">
+
+                <div class="radio-image"></div>
+                <input type="radio" name="study-shift" id="morning" value="morning">
+                <img src="assets/logo/sun-cloud-02.svg" alt="icone de sol com nuvem">
+                <label for="morning">Manhã</label>
+
+              </div>
+
+              <div class="radio-inner">
+
+                <div class="radio-image"></div>
+                <input type="radio" name="study-shift" id="ivening" value="ivening">
+                <img src="assets/logo/sun-02.svg" alt="icone de sol com nuvem">
+                <label for="morning">Tarde</label>
+                
+              </div>
+            </div>
+          </fieldset>
         </form>
       </div>
     </main>
